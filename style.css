@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url("Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+}
+
+
+
+body{
+  font-family: 'Montserrat';
+  background-color: hsl(30, 38%, 92%);
+  height: 100%;
+  width: 100wv;
+  margin: 10vh 5vw;
+  z-index: -1;
+}
+
+.mobile{
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.desktop{
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+  width:100%; 
+  height: auto;
+  padding-bottom: 15%;
+  gap: 1em;
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 20px;
+  
+}
+
+.container header{
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.container main{
+  width:100%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+
+
+.container > main {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem; 
+}
+
+.dark-blue{ 
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 800;
+  color: hsl(212, 21%, 14%);
+}
+
+
+
+.dark-blue-small{  
+  font-weight: 500;
+  color: hsl(212, 21%, 14%);
+  letter-spacing: 5px;
+  margin:2%;
+}
+
+.greyish-blue{  
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height:30px;
+}
+
+.smaller-price{
+  font-family: 'Fraunces';
+  font-size: 30px;
+  font-weight: 800;
+  color:hsl(158, 36%, 37%);
+  
+}
+
+.higher-price{
+  padding:2ch
+}
+
+.price-location{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.button{  
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%; 
+  margin: 0; 
+  padding: 10px; 
+  box-sizing: border-box;
+  margin-top: auto;
+  align-self: flex-start;
+  border-radius: 15px;
+  border:none;
+  background-color:hsl(158, 36%, 37%);
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightgreen;
+}
+
+
+
+@media (min-width: 1050px) {
+
+
+  .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    width: 70%;
+    height:75vh;    
+    margin: 5vh 15%;
+    
+  }
+
+  main {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    padding: 5rem;
+}
+
+  .mobile {
+   display: none;
+  }
+
+  .desktop {
+    display: block; /* Display the desktop image */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;    
+    position:relative;
+  }
+
+    
+}
+
+
+
+
